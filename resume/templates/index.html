@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<style>
+.navbar-header {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+    float:none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+#text1 {
+  border-radius: 20px;
+  background: #73AD21;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-label{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+</style>
+
+<body>
+
+<nav class="navbar navbar-light bg-warning">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="{{ index }}">Resume Builder</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row mt-1">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h2 id="text1">Let me know you better!</h2>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+
+      <!--form start-->
+
+<form method="POST">
+  {% csrf_token %}
+
+
+  <div class="form-outline mb-4">
+    <label class="form-label">Name</label>
+      <input type="text" id="name" name="name" required class="form-control" />
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label">Email address</label>
+    <input type="email" id="email" name="email" required class="form-control" />
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label">Contact Number</label>
+    <input type="text" id="phone_num" name="phone_num" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">City</label>
+    <input type="text" id="city" name="city" required class="form-control" />
+  </div>
+
+
+  <div class="form-outline mb-4">
+    <label class="form-label">Tell about yourself</label>
+    <textarea type="text" id="desc" name="desc" required class="form-control"></textarea>
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">10th School Name</label>
+    <input type="text" id="tenthSchoolName" name="tenthSchoolName" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">10th Percentage</label>
+    <input type="text" id="tenthPercentage" name="tenthPercentage" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">12th School Name</label>
+    <input type="text" id="twelveSchoolName" name="twelveSchoolName" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">12th Percentage</label>
+    <input type="text" id="twelvePercentage" name="twelvePercentage" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">College Name</label>
+    <input type="text" id="collegeName" name="collegeName" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">College Percentage</label>
+    <input type="text" id="collegePercentage" name="collegePercentage" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">Project Name</label>
+    <input type="text" id="projectName" name="projectName" required class="form-control" />
+  </div>
+
+
+  <div class="form-outline mb-4">
+    <label class="form-label">Project Description</label>
+    <textarea type="text" id="projectDesc" name="projectDesc" required class="form-control"></textarea>
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">Skill 1</label>
+    <input type="text" id="firstSkill" name="firstSkill" required class="form-control" />
+  </div>
+    <div class="form-outline mb-4">
+    <label class="form-label">Skill 2</label>
+    <input type="text" id="secondSkill" name="secondSkill" required class="form-control" />
+  </div>
+    <div class="form-outline mb-4">
+    <label class="form-label">Skill 3</label>
+    <input type="text" id="thirdSkill" name="thirdSkill" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">Achievement 1</label>
+    <input type="text" id="firstAchievement" name="firstAchievement" required class="form-control" />
+  </div>
+
+     <div class="form-outline mb-4">
+    <label class="form-label">Achievement 2</label>
+    <input type="text" id="secondAchievement" name="secondAchievement" required class="form-control" />
+  </div>
+     <div class="form-outline mb-4">
+    <label class="form-label">Achievement 3</label>
+    <input type="text" id="thirdAchievement" name="thirdAchievement" required class="form-control" />
+  </div>
+
+    <div class="form-outline mb-4">
+    <label class="form-label">Hobby</label>
+    <textarea type="text" id="hobby" name="hobby" required class="form-control"></textarea>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Show resume</button>
+</form>
+<!--form ends-->
+      </div>
+      <div class="col-md-2"></div>
+  </div>
+</div>
+
+</body>
+</html>
