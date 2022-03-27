@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <style>
+table, th, td {
+  border: 1px solid;
+  width: 50%;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Name: {{ user_profile.name }} </h1>
+<h2>Email: {{ user_profile.email }}</h2>
+<h2>Contact Number: {{ user_profile.phone_num }}</h2>
+<h2>City: {{ user_profile.city }}</h2>
+<hr>
+<h2>About Me: </h2>
+<p>{{ user_profile.desc }}</p>
+<hr>
+<h2>Educational Background: </h2>
+<table>
+    <tr>
+        <td>10th School Name: </td>
+        <td>{{ user_profile.tenthSchoolName }}</td>
+        <td>{{ user_profile.tenthPercentage }}%</td>
+    </tr>
+    <tr>
+        <td>12th School Name: </td>
+        <td>{{ user_profile.twelveSchoolName }}</td>
+        <td>{{ user_profile.twelvePercentage }}%</td>
+    </tr>
+    <tr>
+        <td>College Name: </td>
+        <td>{{ user_profile.collegeName }}</td>
+        <td>{{ user_profile.collegePercentage }}%</td>
+    </tr>
+</table>
+<br>
+<hr>
+<h2>Project: {{ user_profile.projectName }}</h2>
+<p>{{ user_profile.projectDesc }}</p>
+<hr>
+<h2>Skills: </h2>
+<ul>
+    <li>{{ user_profile.firstSkill }}</li>
+    <li>{{ user_profile.secondSkill }}</li>
+    <li>{{ user_profile.thirdSkill }}</li>
+</ul>
+<hr>
+<h2>Achievements: </h2>
+<ul>
+    <li>{{ user_profile.firstAchievement }}</li>
+    <li>{{ user_profile.secondAchievement }}</li>
+    <li>{{ user_profile.thirdAchievement }}</li>
+</ul>
+<hr>
+<h2>Hobbies: </h2>
+<p>{{ user_profile.hobby }}</p>
+
+</body>
+</html>

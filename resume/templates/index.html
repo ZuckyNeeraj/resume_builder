@@ -37,7 +37,7 @@
 
 <nav class="navbar navbar-light bg-warning">
   <div class="navbar-header">
-    <a class="navbar-brand" href="{{ index }}">Resume Builder</a>
+    <a class="navbar-brand" href="{% url 'index' %}">Resume Builder</a>
   </div>
 </nav>
 
@@ -161,9 +161,10 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block mb-4">Show resume</button>
+  <button type="submit" class="btn btn-primary btn-block mb-2">Create my resume</button>
 </form>
 <!--form ends-->
+      <a href="{% url 'list' %}" class="btn btn-primary btn-block mb-2" role="button">Show resume's</a>
       </div>
       <div class="col-md-2"></div>
   </div>
