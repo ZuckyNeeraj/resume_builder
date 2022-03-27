@@ -8,7 +8,7 @@
 ![Screenshot from 2022-03-27 22-56-47](https://user-images.githubusercontent.com/50067295/160293249-d86f4d5b-fb96-4513-8741-079fb7992023.png)
 
 ########### Resume List Page #########
-#cHere you can get all the resume made by the users
+# Here you can get all the resume made by the users
 
 ![Screenshot from 2022-03-27 22-56-57](https://user-images.githubusercontent.com/50067295/160293254-ff8f645b-0ae1-4c3f-a4d7-ecae2bf4cc51.png)
 
